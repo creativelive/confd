@@ -13,7 +13,7 @@
 
 `confd` is currently being cleaned up to build on later versions of Go and moving to adopt native support for [Go modules](https://go.dev/blog/using-go-modules). As part of this work the following major changes are being made:
 
-* The `etcd` and `etcdv3` backend are going to be merged. etcd v2 has been deprecated and both backend will now use etcdv3 client libraries.
+* The `etcd` and `etcdv3` backend are going to be merged. etcd v2 has been deprecated ~~and both backend will now use etcdv3 client libraries.~~ but the original functionality has been restored in this branch.
 * The `cget`, `cgets`, `cgetv`, and `cgetvs` templates function have been removed due to an unmaintained dependency `github.com/xordataexchange/crypt/encoding/secconf`. We need to rethink encryption in the core project and rely only on the standard library going forward. In the meanwhile these template function will not work and if support is required you will need to stick with an older version of confd.
 
 ## Community
